@@ -1,10 +1,17 @@
 class Project
 
-attr_reader :title
+attr_reader :title, :backers
 def initialize(title)
   @title = title
   @backers = []
 
 end
 
-end 
+def add_backer(name)
+baker = Baker.new(name)
+@backers << baker
+end
+
+
+
+end
