@@ -9,6 +9,7 @@ end
 def add_backer(name)
 baker = Baker.new(name)
 @backers << baker
+@backers << self
 end
 
 
