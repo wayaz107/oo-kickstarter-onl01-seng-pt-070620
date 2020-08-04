@@ -6,8 +6,7 @@ def initialize(title)
   @backers = []
 end
 
-def add_backer(name)
-baker = Baker.new(name)
+def add_backer(baker)
 @backers << baker
 @backers << self
 end
